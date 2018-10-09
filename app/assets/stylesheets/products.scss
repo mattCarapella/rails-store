@@ -1,45 +1,65 @@
 .products{
+	margin: 0;
+	padding: 0.5em;
+
+	a {
+		padding: 0.354em 0.5em;
+		border-radius: 0.354em;
+	}
+
 	table{
 		border-collapse: collapse
 	}
 }
 
-table tr td {
-	padding: 5px;
-	vertical-align: top;
+td {
+	padding: 0.5em;
+	margin: 0;
 }
 
-.list_image {
-	width: 60px;
-	height: 70px;
+tr.list_line_odd {				// odd rows
+	background: #effeef;
 }
 
-.list_description {
+tr.image {
+	// hide on mobile
+	display: none;
+
+	// assume anything bigger than 30em is not on mobile and can fit the image 
+	@media (min-width: 30em) {
+		display: block;
+		img {
+			height: 11.3em;
+		}
+	}
+}
+
+td.description {
 	width: 60%;
-
-	dl {
- 		margin: 0;
-	}
-	dt {
-		color: #244; 				// text color
-		font-weight: bold;
-		font-size: larger;
- 	}
-	dd {
-		margin: 0;
+	
+	h1 {
+		font-size: 1.4em;
 	}
 }
 
-.list_actions {
-	font-size: x-small;
-	text-align: right;
-	padding-left: 1em;
+td.actions {
+	ul {
+		padding: 0;
+		list-style: none;
+		li {
+			padding: 0.5em 0.5em;
+		}
+	}
 }
 
-.list_line_even {				// even rows
-	background: #1DEAEE;
+tfoot {
+	td {
+		padding: 0.5em 0;
+	}
 }
 
-.list_line_odd {				// odd rows
-	background: #9AFAFC;
-}
+// .list_line_even {				// even rows
+// 	background: #1DEAEE;
+// }
+
+

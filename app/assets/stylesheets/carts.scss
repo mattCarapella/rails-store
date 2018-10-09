@@ -1,0 +1,61 @@
+// .carts, #side #cart {
+// 	.item_price, .total_line {
+// 		text-align: right;
+// 	}
+
+// 	.total_line, .total_cell {
+// 		font-weight: bold;
+// 		border-top: 1px solid #595;
+// 	}
+// }
+
+.carts {
+	table {
+		border-collapse: collapse; 			// lines columns of table up with no space, 'separate' for space
+	}	
+
+	td {
+		padding: 0.5em;
+	}
+
+	td.quantity {
+		white-space: nowrap;
+	}
+
+	td.quantity::after {
+		//content: " x";
+	}
+
+	td.price {
+		font-weight: bold;
+		text-align: right;
+	}
+
+	tfoot{
+		th, td.price {
+			font-weight: bold;
+			padding-top: 1em;
+		}
+
+		th {
+			text-align: right;
+		}
+
+		td.price {
+			border-top: solid thin;
+		}
+	}
+
+	input[type="submit"] {
+		background-color: #881;
+		border-radius: 0.354em;				// curves the button
+		border: solid thin #441;
+		color: white;									// text color
+		font-size: 1em;
+		padding: 0.354em 1em;
+	}
+
+	input[type="submit"]:hover {
+		background-color: #992;
+	}
+}

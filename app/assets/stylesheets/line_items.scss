@@ -1,0 +1,35 @@
+@keyframes line-item-highlight {
+
+	0% {
+		background: #8f8;
+	}
+
+	100% {
+		background: none;
+	}
+}
+
+.line-item-highlight {
+	animation: line-item-highlight 1s;
+}
+
+
+// The last step is to use this class on the recently added item. To do that, our
+// ERB template needs to know which item is the most recently added item. Set
+// that inside LineItemsController:
+
+// ...
+// if @line_item.save
+// 	format.html { redirect_to store_index_url }
+// ->>> format.js { @current_item = @line_item }
+
+// In the _line_item.html.erb partial, we then check to see if the item we’re rendering
+// is the one that just changed. If so, we give it the animation class we just defined:
+
+// /app/views/line_items/_line_item.html.erb
+
+// ➤ <% if line_item == @current_item %>
+// ➤ 	<tr class="line-item-highlight">
+// ➤ <% else %>
+// ➤ 	<tr>
+// ➤ <% end %>
