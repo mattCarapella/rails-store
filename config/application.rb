@@ -18,7 +18,9 @@ module Depot
     # the framework and any gems in your application.
 
     config.filter_parameters += [ :credit_card_number ]
+    
     config.action_mailer.raise_delivery_errors = true
+    Rails.application.routes.default_url_options[:host] = "XXX"
 		config.action_mailer.delivery_method = :smtp
 		config.action_mailer.smtp_settings = {
 			address: "smtp.gmail.com",
@@ -28,6 +30,7 @@ module Depot
 			authentication: "plain",
 			enable_starttls_auto: true
 		}
+
 		
   end
 
