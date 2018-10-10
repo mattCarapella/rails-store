@@ -1,0 +1,8 @@
+<h3>Order Shipped</h3>
+<p>
+	Thank you for your purchase. Your order has been shipped. Delivery typically takes 2 to 3 business days within the United States.
+</p>
+<table>
+	<tr><th colspan="2">Qty</th><th>Description</th></tr>
+	<%= render @order.line_items -%>
+</table>
