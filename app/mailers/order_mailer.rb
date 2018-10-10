@@ -21,7 +21,5 @@ class OrderMailer < ApplicationMailer
     mail to: order.email, subject: "Your Order Has Shipped!"
   end
 
-  def protect_against_forgery?
-    false 
-  end
+
 end

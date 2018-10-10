@@ -16,7 +16,7 @@ gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
 gem 'jbuilder', '~> 2.5'          # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'webpacker', '~> 3.5', '>= 3.5.5'
 # gem 'redis', '~> 4.0'           # Use Redis adapter to run Action Cable in production
-# gem 'bcrypt', '~> 3.1.7'        # Use ActiveModel has_secure_password
+gem 'bcrypt', '~> 3.1.7'        # Use ActiveModel has_secure_password
 # gem 'mini_magick', '~> 4.8'     # Use ActiveStorage variant
 # gem 'capistrano-rails', group: :development     # Use Capistrano for deployment
 gem 'bootsnap', '>= 1.1.0', require: false        # Reduces boot times through caching; required in config/boot.rb
