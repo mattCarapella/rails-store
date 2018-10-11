@@ -1,19 +1,5 @@
-// /*
-//  * This is a manifest file that'll be compiled into application.css, which will include all the files
-//  * listed below.
-//  *
-//  * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
-//  * vendor/assets/stylesheets directory can be referenced here using a relative path.
-//  *
-//  * You're free to add application-wide styles to this file and they'll appear at the bottom of the
-//  * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
-//  * files in this directory. Styles in this file should be added after the last require_* statement.
-//  * It is generally better to create a new file per style scope.
-//  *
 //  *= require_tree .
 //  *= require_self
-//  */
-
 
 body {
 	margin: 0;
@@ -23,15 +9,18 @@ body {
 header.main {
 	height: 90px;
 	text-align: center; // center on mobile
-	@media (min-width: 30em) {
-		text-align: left; // left align on desktop
-	}
+	// @media (min-width: 30em) {
+	// 	text-align: left; // left align on desktop
+	// }
 	background: linear-gradient(to right, #E3AF00, #e9573f);
 	margin: 0;
+	margin-top: -35px;
 	h1 {
-		padding: 25px;
-
+		padding: 35px;
+		font-size: 3em;
+		color: white;
 		text-align: left;
+		text-shadow: 2px 2px #D09101;
 	}
 }
 
@@ -51,8 +40,10 @@ header.main {
 	}
 
 	nav {
+		min-height: 700px;
 		padding-bottom: 1em;
-		background: #E3AF00;
+		//background: #E3AF00;
+		background: linear-gradient(to right, #E3AF00, #E39E00);
 		text-align: center; // mobile has centered nav
 		@media (min-width: 30em) {
 			text-align: left; // desktop nav is left-aligned
@@ -67,19 +58,21 @@ header.main {
 				padding-right: 1em; // give desktop some extra space
 			}
 			li {
+				color: white;
 				font-family: 'Roboto', sans-serif;
 				font-weight: bold;
+				font-size: 1.3em;
 				margin: 0;
 				padding: 0.5em;
-				text-transform: uppercase;
+				//text-transform: uppercase;
 				letter-spacing: 0.354em;
 				a {
-					color: #000;
+					color: white;
 					text-decoration: none;
 				}
 				a:hover {
 					background: none;
-					color: white;
+					color: black;
 				}
 			}
 		}
@@ -196,3 +189,39 @@ header.main {
 		}
 	}	
 }
+
+#mySidenav a {
+    position: absolute;
+    left: 0px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+    left: 0;
+}
+
+// #about {
+//     top: 20px;
+//     background-color: #4CAF50;
+// }
+
+// #blog {
+//     top: 80px;
+//     background-color: #2196F3;
+// }
+
+// #projects {
+//     top: 140px;
+//     background-color: #f44336;
+// }
+
+// #contact {
+//     top: 200px;
+//     background-color: #555
+// }

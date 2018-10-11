@@ -5,6 +5,7 @@ class Order < ApplicationRecord
 	
 	include ActiveModel::Serializers::Xml
 	has_many :line_items, dependent: :destroy
+	belongs_to :user
 
 	enum pay_type: {
 		"Credit Card" => 0,
