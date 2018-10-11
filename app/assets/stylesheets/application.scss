@@ -21,18 +21,22 @@ body {
 }
 
 header.main {
+	height: 90px;
 	text-align: center; // center on mobile
 	@media (min-width: 30em) {
 		text-align: left; // left align on desktop
 	}
-	background: #282;
+	background: linear-gradient(to right, #E3AF00, #e9573f);
 	margin: 0;
 	h1 {
-		display: none;
+		padding: 25px;
+
+		text-align: left;
 	}
 }
 
 .content {
+	font-family: 'Roboto', sans-serif;
 	margin: 0;
 	padding: 0;
 	display: flex;
@@ -48,7 +52,7 @@ header.main {
 
 	nav {
 		padding-bottom: 1em;
-		background: #141;
+		background: #E3AF00;
 		text-align: center; // mobile has centered nav
 		@media (min-width: 30em) {
 			text-align: left; // desktop nav is left-aligned
@@ -63,12 +67,14 @@ header.main {
 				padding-right: 1em; // give desktop some extra space
 			}
 			li {
+				font-family: 'Roboto', sans-serif;
+				font-weight: bold;
 				margin: 0;
 				padding: 0.5em;
 				text-transform: uppercase;
 				letter-spacing: 0.354em;
 				a {
-					color: #bfb;
+					color: #000;
 					text-decoration: none;
 				}
 				a:hover {
