@@ -194,14 +194,14 @@ Product.create!(
 	description: %{<p><em><ul><li>2nd Gen Ryzen</li><li>AMD StoreMI Technology</li><li>AMD SenseMI Technology</li><li>AMD Ryzen Master Utility</li><li>Socket AM4</li><li>Max Boost Frequency 4.3 GHz</li><li>DDR4 Support</li><li>Unlocked Processor</li><li>Thermal Design Power 105W</li><li>AMD Wraith Prism Cooler Included</li></ul></p>},
 	price: '289.99',
 	image_url: 'amd_ryzen_001.jpg',
-	image_url2: nil, 'amd_ryzen_002.jpg',
+	image_url2: 'amd_ryzen_002.jpg',
 	image_url3: nil,
 	category_id: 2,
 	manufacturer: 'amd',
 	instock: 141,
 	model: '2700X',
 	partnumber: 'YD270XBGAFBOX',
-	weight: 1.21,
+	weight: 1.19,
 	sku: nil,
 	tag: 'processor cpu amd ryzen')
 
