@@ -23,6 +23,7 @@ gem 'bootsnap', '>= 1.1.0', require: false        # Reduces boot times through c
 gem 'figaro', '~> 1.1', '>= 1.1.1'
 gem 'activemodel-serializers-xml', git: 'https://github.com/rails/activemodel-serializers-xml'
 gem 'devise', '~> 4.5'
+gem 'friendly_id', '~> 5.2', '>= 5.2.4'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]     # Call 'byebug' anywhere in the code to stop execution and get a debugger console

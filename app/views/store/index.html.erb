@@ -1,17 +1,16 @@
 <% if notice %>
 	<aside id="notice"><%= notice %></aside>
 <% end %>
-
 <ul class="catalog"> 
 	<% cache @products do %>
 		<% @products.each do |product| %>
 			<% cache product do %>
 				<li class="box">
 					<div class="product-image">
-						<%= image_tag(product.image_url, :size => '200x200') %>
+						<%= link_to image_tag(product.image_url, :size => '200x200'), product %>
 					</div> 
 					<div class="product-title">
-						<h2><%= truncate(product.title, length: 70) %></h2>
+						<h2><%= link_to truncate(product.title, length: 70), product %></h2>
 					</div>
 					<div class="price">
 						<%= number_to_currency(product.price) %>

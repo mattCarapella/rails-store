@@ -8,6 +8,15 @@
     display: flex;
     flex-direction: row;  
     flex-wrap: wrap;
+
+    a {
+    	color:black;
+    	text-decoration: none;
+    }
+    a:hover {
+    	background: none;
+    	text-decoration: underline;
+    }
   }
 
   .box {
@@ -21,12 +30,11 @@
 
 
     .product-image {
-      box-shadow: 0.176em 0.176em 0.354em 0px rgba(0,0,0,0.13);      
+      box-shadow: 0.176em 0.176em 0.354em 0px rgba(0,0,0,0.13);
     }
 
     .product-title {
     	font-size: 0.8em;
-
     }
 
     .product-price {
@@ -35,12 +43,13 @@
     input[type="submit"] {
       border-radius: 0.354em;
       color: black;
-      font-size: 1em;
+      font-size: 0.8em;
+      font-weight: lighter;
       padding: 0.354em 1em;
     }
 
     input[type="submit"]:hover {
-      background-color: #B9A105;
+      background-color: #A4CEE2;
     }
   }
 }  

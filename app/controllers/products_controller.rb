@@ -11,6 +11,7 @@ class ProductsController < ApplicationController
   # GET /products/1
   # GET /products/1.json
   def show
+  	@product
   end
 
   # GET /products/new
@@ -86,6 +87,7 @@ class ProductsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def product_params
-      params.require(:product).permit(:title, :description, :image_url, :price, :category_id)
+      params.require(:product).permit(:title, :description, :image_url, :price, :model, :manufacturer, 
+      	:partnumber, :instock, :tag, :weight, :category_id)
     end
 end

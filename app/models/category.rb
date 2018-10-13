@@ -5,7 +5,9 @@ class Category < ApplicationRecord
 	enum product_class: {
 		"gpu" => 1,
 		"cpu" => 2,
-		"ram" => 3
+		"ram" => 3,
+		"motherboard" => 10,
+		"storage" => 12
 	}
 
 end

@@ -1,24 +1,28 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @product.title %>
-</p>
+<div class="display-product">
+	<div id="product-picture>">
+		<%= image_tag(@product.image_url, :size => '500x500', class: 'list_image') %> 
+	</div>
+	<div class="product-description">
+		<div class=product-title">
+			<h1><%= @product.title %></h1>
+		</div> 
+		<div class="product-description">
+			<%= @product.description %>
+		</div>
+		<div class="product-price">
+		  <h1>Price:</h1>
+		  <h1><%= number_to_currency(@product.price) %></h1>
+		</div>
+	</div>
+</div>
 
-<p>
-  <strong>Description:</strong>
-  <%= @product.description %>
-</p>
 
-<p>
-  <strong>Image url:</strong>
-  <%= @product.image_url %>
-</p>
 
-<p>
-  <strong>Price:</strong>
-  <%= @product.price %>
-</p>
+
+
+
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>

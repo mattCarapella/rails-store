@@ -13,6 +13,18 @@
 	animation: line-item-highlight 1s;
 }
 
+.line-item-trash {
+	background: none;
+}
+
+a {
+	
+}
+
+.trash-link:hover {
+	background: none;
+}
+
 
 // The last step is to use this class on the recently added item. To do that, our
 // ERB template needs to know which item is the most recently added item. Set

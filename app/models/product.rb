@@ -14,7 +14,8 @@ class Product < ApplicationRecord
 
   def self.search(search)
     products = Product.all
-    products = products.where("title like ?", "%#{search.capitalize}%") if search
+    #products = products.where("title like ?", "%#{search.capitalize}%") if search
+    products = products.where("title ILIKE ?", "%#{search}%") if search
     products
   end
 
