@@ -43,7 +43,7 @@ Product.create!(
 	tag: 'evga geforce 2080 xc graphics card gpu gaming')
 
 Product.create!(
-	title: "EVGA GeForce GTX 1060 SC Gaming GPU Graphics Card"
+	title: "EVGA GeForce GTX 1060 SC Gaming GPU Graphics Card",
 	description: %{<p><em>The EVGA GeForce GTX 1060 graphics card is loaded with innovative gaming technologies, making it the perfect choice for the high-definition games. Powered by advanced GPU architecture the GeForce GTX 1060 delivers brilliant performance that opens the door to virtual reality and beyond</em></p>},
 	image_url: "evga_1060_001.jpg",
   image_url2: nil,
@@ -97,7 +97,6 @@ Product.create!(
   image_url2: nil,
 	image_url3: nil,  
   price: 849.00,
-  manufacturer: "msi",
   category_id: 1,
   manufacturer: "msi",
 	instock: 24,
@@ -225,7 +224,12 @@ Product.create!(title: 'Intel Core i7-8700K Coffee Lake 6-Core 3.7 GHz (4.7 GHz 
 
 Product.create!(
 	title: 'G.SKILL TridentZ RGB Series 16GB (2 x 8GB) 288-Pin DDR4 SDRAM DDR4 3200 (PC4 25600) Desktop Memory Model F4-3200C16D-16GTZR ',
-  description: %{<p><em>G.SKILL Trident Z RGB series is one of the world’s most revolutionary RGB lighting DDR4 memory kit. Featuring a complete row of LEDs brilliantly displayed through an uncovered full-length light bar, Trident Z RGB series is capable of displaying a wide range of vivid colors. Along with the strong foundation of G.SKILL overclocking memory development technology, highly screened components, and custom 10-layer PCB, the Trident RGBseries is the ideal DDR4 solution for building an extremely stylish performance PCs.</p>},
+  description: %{<p><em>G.SKILL Trident Z RGB series is one of the world’s most revolutionary RGB 
+  	lighting DDR4 memory kit. Featuring a complete row of LEDs brilliantly displayed through an uncovered 
+  	full-length light bar, Trident Z RGB series is capable of displaying a wide range of vivid colors. 
+  	Along with the strong foundation of G.SKILL overclocking memory development technology, highly screened 
+  	components, and custom 10-layer PCB, the Trident RGBseries is the ideal DDR4 solution for building an 
+  	extremely stylish performance PCs.</p>},
   image_url: 'ddr4_001.jpg',
   image_url2: nil,
 	image_url3: nil,
@@ -242,7 +246,10 @@ Product.create!(
 
 Product.create!(
 	title: 'CORSAIR Dominator Platinum 16GB (2 x 8GB) 288-Pin DDR4 SDRAM DDR4 3200 (PC4 25600) Memory Kit Model CMD16GX4M2B3200C16',
-  description: %{<p><em>DOMINATOR PLATINUM high-performance DDR4 memory is designed for world-class Intel X99 and 100 Series system builds. It's built with hand-screened ICs, undergoes rigorous performance testing, and incorporates patented DHX cooling for reliable performance in demanding environments.</p>},
+  description: %{<p><em>DOMINATOR PLATINUM high-performance DDR4 memory is designed for world-class 
+  	Intel X99 and 100 Series system builds. It's built with hand-screened ICs, undergoes rigorous 
+  	performance testing, and incorporates patented DHX cooling for reliable performance in demanding 
+  	environments.</p>},
   image_url: 'ddr4_003.jpg',
   image_url2: nil,
 	image_url3: nil,
@@ -257,8 +264,11 @@ Product.create!(
 	tag: 'corsair DDR4 memory ram 16GB RGB')  
 
 Product.create!(
-	title: 'Ballistix Sport LT 8GB Single DDR4 2666 MT/s (PC4-21300) SR x8 288-Pin Memory'
-	description: %{<p><em><ul><li>Speeds start at 2666 MT/s</li><li>Faster speeds and responsiveness than standard DDR4 memory</li><li>Ideal for gamers and performance enthusiasts</li><li>Multi-channel memory architecture maximizes data rates</li><li>Unbuffered / 8GB based / Single Rank module</li></em></ul></p>},
+	title: 'Ballistix Sport LT 8GB Single DDR4 2666 MT/s (PC4-21300) SR x8 288-Pin Memory',
+	description: %{<p><em><ul><li>Speeds start at 2666 MT/s</li><li>Faster speeds and responsiveness than 
+		standard DDR4 memory</li><li>Ideal for gamers and performance enthusiasts</li><li>Multi-channel memory 
+		architecture maximizes data rates</li><li>Unbuffered / 8GB based / Single Rank 
+		module</li></em></ul></p>},
 	image_url: 'ddr4_04.jpg',
 	image_url2: nil,
 	image_url3: nil,
@@ -277,7 +287,14 @@ Product.create!(
 
 Product.create!(
 	title: 'ASUS Rog Maximus XI Hero Z390 Motherboard',
-	description: %{<p><em><ul><li>Designed for 9th and 8th generation Intel Core processors to maximize connectivity and speed with dual M.2, USB 3.1 Gen 2, onboard 802.11 ac Wi-Fi and ASUS OptiMem II for better DRAM overclocking stability</li><li>Revamped 5-Way Optimization overclocks intelligently based on smart prediction and thermal telemetry while FanXpert 4 delivers dynamic system cooling</li><li>Aura Sync RGB lighting with addressable headers features a nearly endless spectrum of colors with the ability to synchronize effects across an ever-expanding ecosystem of Aura Sync enabled products</li><li>Pre-mounted I/O shield ensures streamlined installation and represents ROGs attention to detail and quality</li></ul></p>},
+	description: %{<p><em><ul><li>Designed for 9th and 8th generation Intel Core processors to maximize 
+		connectivity and speed with dual M.2, USB 3.1 Gen 2, onboard 802.11 ac Wi-Fi and ASUS OptiMem II 
+		for better DRAM overclocking stability</li><li>Revamped 5-Way Optimization overclocks intelligently 
+			based on smart prediction and thermal telemetry while FanXpert 4 delivers dynamic system 
+			cooling</li><li>Aura Sync RGB lighting with addressable headers features a nearly endless spectrum 
+			of colors with the ability to synchronize effects across an ever-expanding ecosystem of Aura 
+			Sync enabled products</li><li>Pre-mounted I/O shield ensures streamlined installation and represents 
+			ROGs attention to detail and quality</li></ul></p>},
 	image_url: 'mb_001.jpg',
 	image_url2: 'asus_rog_z390_002.jpg',
 	image_url3: 'asus_rog_z390_003.jpg',
@@ -294,7 +311,11 @@ Product.create!(
 
 Product.create!(
 	title: 'ASrock Z370 Extreme4 LGA 1151 (300 Series) Intel Z370 HDMI SATA 6Gb/s USB 3.1 ATX Intel Motherboard',
-	description: %{<p><em><ul><li>Supports 8th Generation Intel Core Processors (Socket 1151)</li><li>Not backward compatible with older generation of LGA 1151 CPUs</li><li>Supports DDR4 4333+(OC)*/ 4266(OC)/ 4133(OC)/ 4000(OC)/ 3866(OC)/ 3800(OC)/ 3733(OC)/ 3600(OC)/ 3200(OC)/ 2933(OC)/ 2800(OC)/ 2666/ 2400/ 2133</li><li>8th Gen Intel CPU supports DDR4 up to 2666.</li><li>Please refer to Memory Support List on ASRocks website for more information.</li></ul></p>},
+	description: %{<p><em><ul><li>Supports 8th Generation Intel Core Processors (Socket 1151)</li><li>Not 
+		backward compatible with older generation of LGA 1151 CPUs</li><li>Supports DDR4 4333+(OC)*/ 4266(OC)/ 
+		4133(OC)/ 4000(OC)/ 3866(OC)/ 3800(OC)/ 3733(OC)/ 3600(OC)/ 3200(OC)/ 2933(OC)/ 2800(OC)/ 2666/ 2400/ 
+		2133</li><li>8th Gen Intel CPU supports DDR4 up to 2666.</li><li>Please refer to Memory Support List on 
+		ASRocks website for more information.</li></ul></p>},
 	image_url: 'mb_003.jpg',
 	image_url2: nil,
 	image_url3: nil,
@@ -312,7 +333,12 @@ Product.create!(
 
 Product.create!(
 	title: 'SuperMicro SuperO MBD-C9Z390-CGW-O LGA 1151 (300 Series) Intel Z390 HDMI USB 3.1 ATX Intel Motherboard',
-	description: %{<p><em><ul><li>Memory Standard: DDR4-2666~3866+(OC)</li><li>Number of Memory Slots: 4? 288pinAudio </li><li>Chipset: Realtek ALC1220</li><li>PCI Express 3.0 x16: 2 x PCI Express 3.0 x16</li><li>Max LAN Speed: 10Gbps + 10/100/1000Mbps</li><li>CPU Type: 8th/9th Gen. Intel Core, Pentium and Celeron series CPUs up to 140W </li><li>Not backward compatible with older generation of LGA 1151 CPUs</li><li>Maximum Memory Supported: 64GBPCI Express x4: 1 x PCI Express 3.0 x4 </li></ul></em></p>},
+	description: %{<p><em><ul><li>Memory Standard: DDR4-2666~3866+(OC)</li><li>Number of Memory Slots: 4? 
+		288pinAudio </li><li>Chipset: Realtek ALC1220</li><li>PCI Express 3.0 x16: 2 x PCI Express 3.0 
+		x16</li><li>Max LAN Speed: 10Gbps + 10/100/1000Mbps</li><li>CPU Type: 8th/9th Gen. Intel Core, 
+		Pentium and Celeron series CPUs up to 140W </li><li>Not backward compatible with older generation of
+		 LGA 1151 CPUs</li><li>Maximum Memory Supported: 64GBPCI Express x4: 1 x PCI Express 3.0 
+		 x4 </li></ul></em></p>},
 	image_url: 'mb_002.jpg',
 	image_url2: nil,
 	image_url3: nil,
@@ -330,8 +356,11 @@ Product.create!(
 
 Product.create!(
 	title: 'Crucial MX500 2.5" 1TB SATA III 3D NAND Internal Solid State Drive (SSD) CT1000MX500SSD1',
-	description: %{<p><em>Every time you turn on your computer, you're using your storage drive. It holds all your irreplaceable files and it loads and saves what your system does. Join more and more people who are keeping their family videos, travel photos, music, and important documents on an SSD, and get the near-instant performance and lasting reliability that comes with solid state storage.</em></p>},
-	image_url: 'ssd_002.jpg'
+	description: %{<p><em>Every time you turn on your computer, you're using your storage drive. It holds 
+		all your irreplaceable files and it loads and saves what your system does. Join more and more people 
+		who are keeping their family videos, travel photos, music, and important documents on an SSD, and get 
+		the near-instant performance and lasting reliability that comes with solid state storage.</em></p>},
+	image_url: 'ssd_002.jpg',
 	image_url2: nil,
 	image_url3: nil,
 	price: 119.99,
@@ -346,7 +375,9 @@ Product.create!(
 
 Product.create!(
 	title: 'Intel 545s 2.5" 512GB SATA III 64-Layer 3D NAND TLC Internal Solid State Drive SSD SSDSC2KW512G8X1',
-	description: %{<p><em>For those who demand value and performance - the new Intel SSD - featuring 64-layer Intel 3D NAND technology - offers a cost-effective and efficient replacement for traditional hard disk drives (HDD).</em></p>},
+	description: %{<p><em>For those who demand value and performance - the new Intel SSD - featuring 
+		64-layer Intel 3D NAND technology - offers a cost-effective and efficient replacement for traditional
+		 hard disk drives (HDD).</em></p>},
 	image_url: 'ssd_004.jpg',
 	image_url2: nil,
 	image_url3: nil,
@@ -361,8 +392,12 @@ Product.create!(
 	tag: nil)
 
 Product.create!(
-	title: 'Samsung 860 EVO Series 2.5" 500GB SATA III V-NAND 3-bit MLC Internal Solid State Drive SSD MZ-76E500B/AM,'
-	description: %{<p><em>Powered by Samsung V-NAND Technology. Boost computer performance with this Samsung Evo series solid-state drive. Its maximum read and write speeds of 550MB/s and 520MB/s let you speed through data transfers, and the 500GB of storage space leaves room for plenty of files. This Samsung Evo series solid-state drive is compatible with a number of Sata configurations for flexible use.</em></p>},
+	title: 'Samsung 860 EVO Series 2.5" 500GB SATA III V-NAND 3-bit MLC Internal Solid State Drive SSD MZ-76E500B/AM',
+	description: %{<p><em>Powered by Samsung V-NAND Technology. Boost computer performance with this Samsung 
+		Evo series solid-state drive. Its maximum read and write speeds of 550MB/s and 520MB/s let you speed 
+		through data transfers, and the 500GB of storage space leaves room for plenty of files. This Samsung 
+		Evo series solid-state drive is compatible with a number of Sata configurations for flexible 
+		use.</em></p>},
 	image_url: 'ssd_001.jpg',
 	image_url2: nil,
 	image_url3: nil,
@@ -378,7 +413,9 @@ Product.create!(
 
 Product.create!(
 	title: 'SanDisk Ultra 3D 2.5" 500GB SATA III 3D NAND Internal Solid State Drive (SSD) SDSSDH3-500G-G25',
-	description: %{<p><em>Accelerate your PC for faster boot-up and blazing-fast gaming and graphics when you upgrade to a SanDisk Ultra 3D SSD. You'll notice that applications load faster and files move quicker - plus you'll get longer battery life and much cooler, quieter computing.</em></p>},
+	description: %{<p><em>Accelerate your PC for faster boot-up and blazing-fast gaming and graphics when 
+		you upgrade to a SanDisk Ultra 3D SSD. You'll notice that applications load faster and files move 
+		quicker - plus you'll get longer battery life and much cooler, quieter computing.</em></p>},
 	image_url: 'ssd_003.jpg',
 	image_url2: nil,
 	image_url3: nil,
