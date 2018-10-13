@@ -106,7 +106,7 @@ Product.create!(
 	sku: nil,
 	tag: 'msi geforce 2080 rtx trio gpu graphics card gaming')
 
-Product.create!()
+Product.create!(
 	title: 'NVIDIA GeForce RTX 2080 RTX 2080 Founders Edition Graphics Card - 8 GB GDDR6 - 1515 MHz',
   description: %{<p><em>When it comes to next-gen gaming, it's all about realism. GeForce RTX 2080 is light years ahead of other cards, delivering truly unique real-time ray-tracing technologies for cutting-edge, hyper-realistic graphics.</p>},
   image_url: 'gtx2080_02.jpg',  
@@ -119,8 +119,8 @@ Product.create!()
 	model: "RTX 2080 Founder's Edition",
 	partnumber: "9001G1802500000",
 	sku: 6291648,
-	weight: 2.06,
-	tag: "nvidia geforce 2080 rtx gpu graphics card gaming",)
+	weight: 2.10,
+	tag: "nvidia geforce 2080 rtx gpu graphics card gaming")
 
 Product.create!(title: 'Zotac GeForce RTX 2080 Blower Graphics Card - 8 GB GDDR6 - 256-bit',
   description:  %{<p><em>The all-new generation of ZOTAC GAMING GeForce graphics cards are here. Based on the new NVIDIA Turing architecture, it's packed with more cores and all-new GDDR6 ultra-fast memory. Integrated with more smart and optimized technologies, get ready to get fast and game strong like never before.</p>},
