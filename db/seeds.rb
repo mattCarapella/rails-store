@@ -427,4 +427,4 @@ Product.create!(
 	partnumber: 'SDSSDH3-500G-G25',
 	weight: 1.24,
 	sku: nil,
-	taag: nil)
+	tag: nil)

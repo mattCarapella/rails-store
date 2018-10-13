@@ -35,6 +35,10 @@ header.main {
 
     }
 
+    .logo {
+    	float: left;
+    }
+
     .search-field {
     	display: inline-block;    	
     }
@@ -62,7 +66,7 @@ header.main {
 	}
 
 	.dropdown {
-	    float: leeft;
+	    float: left;
 	    overflow: hidden;
 	}
 
