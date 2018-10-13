@@ -7,20 +7,105 @@ body {
 }
 
 header.main {
-	height: 90px;
-	text-align: center; // center on mobile
-	// @media (min-width: 30em) {
-	// 	text-align: left; // left align on desktop
-	// }
-	background: linear-gradient(to right, #E3AF00, #e9573f);
-	margin: 0;
-	margin-top: -35px;
-	h1 {
-		padding: 35px;
-		font-size: 3em;
-		color: white;
-		text-align: left;
-		text-shadow: 2px 2px #D09101;
+
+	.navbar-top {
+		height: 100px;
+		overflow: hidden;
+    background: #474747;
+    margin-top:-10px;
+
+    .search {
+
+    	border: none;
+    	text-align: center;
+    	padding-top: 30px;
+
+    	input[type=text] {
+    		width: 500px;
+    		height: 25px;
+    		border-radius: 4px;
+    		text-align: center;
+			}
+
+			input[type=submit] {
+    		width: 500px;
+    		height: 25px;
+    	
+			}
+
+    }
+
+    .search-field {
+    	display: inline-block;    	
+    }
+
+	}
+
+	.navbar {
+    overflow: hidden;
+    background: #6C6E70; //linear-gradient(to right, #E3AF00, #e9573f);
+    //font-family: Arial, Helvetica, sans-serif;
+    font-size: 5em;
+    height: 50px;
+    text-align: left;
+    
+
+	}
+
+	.navbar a {
+	    float: left;
+	    font-size: 16px;
+	    color: white;
+	    text-align: center;
+	    padding: 17px 16px;
+	    text-decoration: none;
+	}
+
+	.dropdown {
+	    float: leeft;
+	    overflow: hidden;
+	}
+
+	.dropdown .dropbtn {
+	    font-size: 16px; 
+	    font-weight: lighter;   
+	    border: none;
+	    outline: none;
+	    color: white;
+	    padding: 14px 16px;
+	    background-color: inherit;
+	    font-family: inherit;
+	    margin: 0;
+	}
+
+	.navbar a:hover, .dropdown:hover .dropbtn {
+	    background-color: #6C6E70;
+	}
+
+	.dropdown-content {
+	    display: none;
+	    position: absolute;
+	    background-color: #f9f9f9;
+	    min-width: 160px;
+	    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	    z-index: 1;
+	}
+
+	.dropdown-content a {
+	    float: none;
+	    color: black;
+	    padding: 12px 16px;
+	    text-decoration: none;
+	    display: block;
+	    text-align: left;
+	}
+
+	.dropdown-content a:hover {
+	    background-color: #ddd;
+	}
+
+	.dropdown:hover .dropdown-content {
+	    display: block;
 	}
 }
 
@@ -42,8 +127,7 @@ header.main {
 	nav {
 		min-height: 700px;
 		padding-bottom: 1em;
-		//background: #E3AF00;
-		background: linear-gradient(to right, #E3AF00, #E39E00);
+		background: #BDBDBD;
 		text-align: center; // mobile has centered nav
 		@media (min-width: 30em) {
 			text-align: left; // desktop nav is left-aligned
@@ -206,22 +290,44 @@ header.main {
     left: 0;
 }
 
-// #about {
-//     top: 20px;
-//     background-color: #4CAF50;
-// }
 
-// #blog {
-//     top: 80px;
-//     background-color: #2196F3;
-// }
+.categories .store{
+  
+  .catalog {
+    display: flex;
+    flex-direction: row;  
+    flex-wrap: wrap;
+  }
 
-// #projects {
-//     top: 140px;
-//     background-color: #f44336;
-// }
+  .box {
+    list-style: none;
+    width: 200px;
+    padding: 10px 10px;
+    margin: 10px 10px;  
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 
-// #contact {
-//     top: 200px;
-//     background-color: #555
-// }
+    .product-image {
+      box-shadow: 0.176em 0.176em 0.354em 0px rgba(0,0,0,0.13);      
+    }
+
+    .product-title {
+    }
+
+    .product-price {
+    }
+
+    input[type="submit"] {
+      border-radius: 0.354em;
+      color: black;
+      font-size: 1em;
+      padding: 0.354em 1em;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #B9A105;
+    }
+  }
+}
+

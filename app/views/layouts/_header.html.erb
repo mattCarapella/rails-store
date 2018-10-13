@@ -1,0 +1,28 @@
+ 			<%= image_tag("1920x80b.jpg", :size => "1440x80") %>
+ 			
+ 			<div class="navbar-top">
+						
+				<fieldset class="search">
+		      <%= form_tag products_path, method: :get, class: "coin_search" do %>
+						<div class="search-field">
+							<%= text_field_tag :title, params[:search], placeholder: "Search all products..." %>
+						</div>
+						
+					  <% end %>
+				</fieldset>
+ 			
+ 			</div>
+ 			
+ 			<div class="navbar">
+ 				<a href="/">All Products</a>
+ 				<div class="dropdown">
+    			<button class="dropbtn">Categories 
+     				<i class="fa fa-caret-down"></i>
+    			</button>
+	    		<div class="dropdown-content">
+			      <a href="/categories/1">GPUs</a>
+			      <a href="/categories/2">CPUs</a>
+			      <a href="/categories/3">Memory</a>
+	   		 </div>
+  			</div> 
+			</div>

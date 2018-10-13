@@ -9,4 +9,9 @@ class StoreController < ApplicationController
     end
     session[:counter]+=1
   end
+
+  private 
+
+
+
 end

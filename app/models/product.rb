@@ -1,5 +1,5 @@
 class Product < ApplicationRecord
-
+	belongs_to :category
 	has_many :line_items
 	has_many :orders, through: :line_items
 	before_destroy :ensure_not_referenced_by_any_line_item
@@ -11,6 +11,12 @@ class Product < ApplicationRecord
 		message: 'must be a URL for GIF, JPG or PNG image.'
 	}
 	validates :price, numericality: {greater_than_or_equal_to: 0.01}
+
+  def self.search(search)
+    products = Product.all
+    products = products.where("title like ?", "%#{search.capitalize}%") if search
+    products
+  end
 
 	private 
 

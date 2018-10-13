@@ -1,8 +1,7 @@
- // Place all the styles related to the Store controller here.
+// Place all the styles related to the Categories controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
-.store {
+.categories {
   
   .catalog {
     display: flex;
@@ -19,14 +18,12 @@
     justify-content: space-between;
     flex-direction: column;
 
-
     .product-image {
       box-shadow: 0.176em 0.176em 0.354em 0px rgba(0,0,0,0.13);      
     }
 
     .product-title {
     	font-size: 0.8em;
-
     }
 
     .product-price {
@@ -43,4 +40,4 @@
       background-color: #B9A105;
     }
   }
-}  
+}

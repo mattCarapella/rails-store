@@ -3,8 +3,8 @@
 <% end %>
 
 <ul class="catalog"> 
-	<% cache @products do %>
-		<% @products.each do |product| %>
+	<% cache @products_in_category do %>
+		<% @products_in_category.each do |product| %>
 			<% cache product do %>
 				<li class="box">
 					<div class="product-image">
