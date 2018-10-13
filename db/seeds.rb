@@ -182,10 +182,10 @@ Product.create!(title: 'Intel Core i7-9700K Coffee Lake 8-Core 3.6 GHz (4.9 GHz 
   price: 449.00,
   category_id: 2,
   manufacturer: 'intel',
-	instock: 29,,
+	instock: 29,
 	model: '9700k',
 	partnumber: 'BX80684I79700K',
-	weight: 1.09,
+	weight: 1.01,
 	sku: nil,
 	tag: 'intel cpu processor coffee lake')  
 
