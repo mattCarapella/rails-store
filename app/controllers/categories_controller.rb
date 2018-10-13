@@ -1,7 +1,7 @@
 class CategoriesController < ApplicationController
 	include CurrentCart 
 	before_action :set_cart
-	before_action :find_category, only: [:show, :edit, :update, :destroy ]
+	before_action :find_category, only: [:show, :edit, :index, :update, :destroy ]
 
   def new
   end
@@ -17,8 +17,27 @@ class CategoriesController < ApplicationController
   	@categories = Category.all
   end
 
+  def edit
+
+  end
+
+  def update
+  	respond_to do |format|
+      if @category.update(category_params)
+        format.html { redirect_to @category, notice: 'Category was successfully updated.' }
+        format.json { render :show, status: :ok, location: @category }
+      else
+        format.html { render :edit }
+        format.json { render json: @category.errors, status: :unprocessable_entity }
+      end
+    end
+
+  end
+
   def destroy
   end
+
+
 
 	private
 
@@ -27,7 +46,7 @@ class CategoriesController < ApplicationController
 	end
 
 	def find_category
-		@category = Category.find(params[:id])
+		@category = Category.friendly.find(params[:id])
 	end
 
 	def find_product
