@@ -212,7 +212,7 @@ Product.create!(title: 'Intel Core i7-8700K Coffee Lake 6-Core 3.7 GHz (4.7 GHz 
 	image_url3: nil,
   price: 389.00,
   category_id: 2,
-  manufacturer: 'intel,'
+  manufacturer: 'intel',
 	instock: 19,
 	model: '8700k',
 	partnumber: 'BX80684I78700K',
@@ -239,7 +239,7 @@ Product.create!(
 	instock: 189,
 	model: "TridentZ",
 	partnumber: "PC428800",
-	weight: .034,
+	weight: 0.34,
 	sku: nil,
 	tag: "g skill gskill DDR4 memory ram 16GB RGB")  
 
@@ -259,7 +259,7 @@ Product.create!(
 	instock: 189,
 	model: 'dominator platinum 16gb',
 	partnumber: 'CMD16GX4M2B3200C16',
-	weight: .024,
+	weight: 0.24,
 	sku: nil,
 	tag: 'corsair DDR4 memory ram 16GB RGB')  
 
