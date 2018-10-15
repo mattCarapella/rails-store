@@ -218,7 +218,22 @@ Product.create!(title: 'Intel Core i7-8700K Coffee Lake 6-Core 3.7 GHz (4.7 GHz 
 	partnumber: 'BX80684I78700K',
 	weight: 1.21,
 	sku: nil, 
-	tag: 'intel cpu processor coffee lake')  
+	tag: 'intel cpu i7 processor 8700 8700K coffee lake') 
+
+Product.create!(title: 'Intel Core i5-8600K Coffee Lake 6-Core 3.6 GHz (4.3 GHz Turbo) LGA 1151 (300 Series) 95W BX80684I58600K Desktop Processor Intel UHD Graphics 630',
+  description:  %{<p><em><ul><li>Only Compatible with Intel 300 Series Motherboard</li><li>For A Great VR Experience</li><li>Max Turbo Frequency 4.3 GHz</li><li>Intel UHD Graphics 630</li><li>Unlocked Processor</li><li>DDR4 Support</li><li>Socket LGA 1151 (300 Series)</li><li>Cooling device not included - Processor Only</li></ul></p>},
+  image_url: 'i5_core_001.jpg',
+  image_url2: nil,
+	image_url3: nil,
+  price: 279.00,
+  category_id: 1,
+  manufacturer: 'intel',
+	instock: 49,
+	model: '8600k',
+	partnumber: 'BX80684I58600K',
+	weight: 1.20,
+	sku: nil, 
+	tag: 'intel cpu i5 processor 8600 8600K coffee lake')  
 
 Product.create!(
 	title: 'AMD Ryzen Threadripper 2990WX 32-Core, 64-Thread, 4.2 GHz Max Boost (3.0 GHz Base), Socket sTR4 250W YD299XAZAFWOF Desktop Processor',
@@ -474,5 +489,42 @@ Product.create!(
 	model: 'ultra 3d',
 	partnumber: 'SDSSDH3-500G-G25',
 	weight: 1.24,
+	sku: nil,
+	tag: nil)
+
+
+		
+
+
+#fans
+Product.create!(
+	title: 'Enermax ETS-T40F-BK 120mm Twister Aluminum 120mm Black CPU Cooler with blue LED PWM Fan',
+	description: <p><em><ul><li>800 - 1800 RPM</li><li>33.26 - 75.98 CFM</li><li>Aluminum & Copper</li></ul></em></p>,
+	image_url: 'emermax_etst40f_fan_001.jpg',
+	image_url2: 'emermax_etst40f_fan_002.jpg',
+	image_url3: 'emermax_etst40f_fan_003.jpg',
+	price: 34.99,
+	category_id: 1,
+	manufacturer: 'enermax',
+	instock: 121,
+	model: 'ETS-T40F-BK',
+	partnumber: nil,
+	weight: 0.21,
+	sku: nil,
+	tag: nil)
+
+Product.create!(
+	title: 'Lepa Chopper Advance LPCPA12P-BL Cooling Fan - 120 mm - 1500 rpm70.4 CFM - 20 dB(A) Noise - Barometric Oilless Bearing - Blue LED',
+	description: <p><em><ul><li>Patented modular frame with LEPA logo halo ring design to increase 30% airflow.</li><li>Unique quad-ring LED pattern creates 30 different lighting effects.</li><li>Dynamic lighting mode to meet your visual desire.</li><li>PWM speed control for the perfect balance between performance and silence.</li><li>Patented Barometric Oilless (BOL) bearing for long lifespan and silent spinning.</li><li>Removable fan blade for convenient cleaning.</li></ul></em></p>,
+	image_url: 'lepa_chopper_001.jpg',
+	image_url2: 'lepa_chopper_002.jpg',
+	image_url3: 'lepa_chopper_003.jpg',
+	price: 19.99,
+	category_id: 1,
+	manufacturer: 'lepa',
+	instock: 91,
+	model: 'LPCPA12P-BL',
+	partnumber: nil,
+	weight: 0.26,
 	sku: nil,
 	tag: nil)

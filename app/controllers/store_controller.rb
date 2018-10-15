@@ -4,7 +4,7 @@ class StoreController < ApplicationController
 	
   def index
   	@search = Product.search(params[:q])
-  	@products = @search.result.order(:title)
+  	@products = @search.result.order(:title).paginate(:page => params[:page], :per_page => 25)
 
   	if session[:counter].nil?
       session[:counter] = 0
