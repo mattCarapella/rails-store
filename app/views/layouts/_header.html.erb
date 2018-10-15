@@ -1,35 +1,43 @@
-<div class="ad">
-	<%= image_tag("1920x80b.jpg", :size => "1440x80") %>
-</div>
+	<%= image_tag("1920x80b.jpg", :size => "1800x70") %>
+
+
 <div class="navbar-top">
 	<div class="logo">
-	<%= link_to image_tag("logo_02.png"), store_index_path %>
-</div>
-<fieldset class="search">	
-	<%= search_form_for @search do |f| %>
-		<div class="field">
-			<%= f.text_field :title_cont, :class => "form-control", :placeholder => "Search all products..." %> 
-		</div>	
-	<% end %>
-</fieldset> 		
+		<%= link_to image_tag("logo_02.png"), store_index_path %>
+	</div>
+	<fieldset class="search">	
+		<%= search_form_for @search do |f| %>
+			<div class="field">
+				<%= f.text_field :title_cont, :class => "form-control", :placeholder => "Search all products..." %> 
+			</div>	
+		<% end %>
+	</fieldset> 		
 </div>
 
 <div class="navbar">
 	<%= link_to "All Products", products_path %>
 	<div class="dropdown">
-	<button class="dropbtn">Categories 
-			<i class="fa fa-caret-down"></i>
-	</button>
-	<div class="dropdown-content">
-    <a href="/categories/gpu">GPUs</a>
-    <a href="/categories/cpu">CPUs</a>
-    <a href="/categories/memory">Memory</a>
-    <a href="/categories/motherboard">Motherboards</a>
-    <a href="/categories/storage">Storage</a>
-    <a href="/categories/case">Cases</a>
-    <a href="/categories/power_supply">Power Supplies</a>
-    <a href="/categories/fan">Fans</a>
-    <a href="/categories/accessories">Accessories</a>
-	 </div>
-</div> 
+		<button class="dropbtn">Categories 
+				<i class="fa fa-caret-down"></i>
+		</button>
+		<div class="dropdown-content">
+	    <a href="/categories/gpu">GPUs</a>
+	    <a href="/categories/cpu">CPUs</a>
+	    <a href="/categories/memory">Memory</a>
+	    <a href="/categories/motherboard">Motherboards</a>
+	    <a href="/categories/storage">Storage</a>
+	    <a href="/categories/case">Cases</a>
+	    <a href="/categories/power_supply">Power Supplies</a>
+	    <a href="/categories/fan">Fans</a>
+	    <a href="/categories/accessories">Accessories</a>
+		 </div>
+	</div> 
+	<div class="login">
+		<% if current_user %>
+			<%= link_to "Your Account", edit_user_registration_path, :class => 'navbar-link' %>
+			<%= link_to "Log Out", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+		<% else %>
+			<%= link_to "Log In", new_user_session_path %>
+		<% end %>
+	</div>
 </div>

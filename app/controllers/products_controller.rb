@@ -4,14 +4,17 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
   def index
-    #@products = Product.search(params[:title])
+    #@products = Product.search(params[:title])		
 		@search = Product.search(params[:q])
-  	@products = @search.result
+  	@products = @search.result.paginate(:page => params[:page], :per_page => 25)
   end
 
   # GET /products/1
   # GET /products/1.json
   def show
+  	@search = Product.search(params[:q])
+	  @products = @search.result
+  	@product = Product.find(params[:id])
   end
 
   # GET /products/new
@@ -68,7 +71,6 @@ class ProductsController < ApplicationController
     end
   end
 
-
   # DELETE /products/1
   # DELETE /products/1.json
   def destroy
@@ -80,12 +82,10 @@ class ProductsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
     def set_product
       @product = Product.find(params[:id])
     end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
     def product_params
       params.require(:product).permit(:title, :description, :image_url, :price, :model, :manufacturer, 
       	:partnumber, :instock, :tag, :weight, :category_id, :sku)

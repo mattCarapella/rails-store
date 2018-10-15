@@ -10,9 +10,7 @@ class CategoriesController < ApplicationController
   end
 
   def show
-   	@search = Product.search(params[:q])
-  	products = @search.result
-  	@products_in_category = @category.products.order(:title)
+  	@products_in_category = @category.products.order(:title).paginate(:page => params[:page], :per_page => 25)
   end
 
   def index
