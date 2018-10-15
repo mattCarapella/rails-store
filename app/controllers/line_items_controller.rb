@@ -66,7 +66,7 @@ class LineItemsController < ApplicationController
       @line_item.destroy
     end
     respond_to do |format|
-      format.html { redirect_to store_index_url }
+      format.html { redirect_to request.referrer }
       format.json { head :no_content }
     end
   end

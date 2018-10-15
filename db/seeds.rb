@@ -220,6 +220,22 @@ Product.create!(title: 'Intel Core i7-8700K Coffee Lake 6-Core 3.7 GHz (4.7 GHz 
 	sku: nil, 
 	tag: 'intel cpu processor coffee lake')  
 
+Product.create!(
+	title: 'AMD Ryzen Threadripper 2990WX 32-Core, 64-Thread, 4.2 GHz Max Boost (3.0 GHz Base), Socket sTR4 250W YD299XAZAFWOF Desktop Processor',
+	description: %{<p><em><ul><li>2nd Gen Threadripper</li><li>AMD SenseMI Technology</li><li>AMD Ryzen Master Utility</li><li>32 Cores / 64 Threads</li><li>4.2 GHz Max Boost Clocks, 3.0 GHz Base</li><li>Socket sTR4</<li>DDR4 Support</li><li>12nm</li><li>Unlocked for Overclocking</li><li>Cooling device not included - Processor Only</li></ul></em></p>},
+	image_url: 'amd_ryzen_threadripper_001.jpg',
+	image_url2: 'amd_ryzen_threadripper_002.jpg',
+	image_url3: 'amd_ryzen_threadripper_003.jpg',
+	price: 1749.99,
+	category_id: 1,
+	manufacturer: 'amd',
+	instock: 19,
+	model: '2990WX',
+	partnumber: 'YD299XAZAFWOF',
+	weight: 0.92,
+	sku: nil,
+	tag: nil)
+
 #memory --------------------------------------------------------------------------------------------------------
 
 Product.create!(
@@ -349,6 +365,38 @@ Product.create!(
 	model: '1151',
 	partnumber: 'MBD-C9Z390-CGW-O',
 	weight: 2.14,
+	sku: nil,
+	tag: nil)
+
+Product.create!(
+	title: 'GIGABYTE Z390 AORUS ULTRA LGA 1151 (300 Series) Intel Z390 HDMI SATA 6Gb/s USB 3.1 ATX Intel Motherboard',
+	description: %{<p><em><ul><li>Supports Intel 8th & 9th Gen Core i7/i5/i3, Celeron, and Pentium Processors</li><li>Dual Channel DDR4, 4 DIMMs</li><li>Support for DDR4 4266(O.C.)/ 4133(O.C.)/ 4000(O.C.)/ 3866(O.C.)/ 3800(O.C.)/ 3733(O.C.)/ 3666(O.C.)/ 3600(O.C.)/ 3466(O.C.)/ 3400(O.C.)/ 3333(O.C.)/ 3300(O.C.)/ 3200(O.C.)/ 3000(O.C.)/ 2800(O.C.)/ 2666/ 2400/ 2133 MHz memory modules</li><li>Integrated I/O Shield</li><li>Intel Optane Memory Ready</li><li>12+1 Phases Digital VRM Solution with DrMOS</li><li>Advanced Thermal Design with Direct Touch Heatpipe</li><li>ALC1220-VB Enhance 114dB (Rear) / 110dB (Front) SNR in Microphone</li><li>Intel Gigabit LAN with cFosSpeed</li><li>RGB FUSION with Multi-Zone LED Light Show Design, Supports Addressable LED & RGB LED Strips</li><li>Smart Fan 5 with Hybrid Fan Headers with FAN STOP</li><li>Front USB 3.1 Gen 2 Type-C Header</li><li>Triple M.2 with Triple Thermal Guards</li><li>USB DAC-UP 2 with Adjustable Voltage</li><li>CEC 2019 Ready</li></ul></em></p>},
+	image_url: 'gigabyte_z390_001.jpg',
+	image_url2: 'gigabyte_z390_002.jpg',
+	image_url3: 'gigabyte_z390_003.jpg',
+	price: 249.99,
+	category_id: 1,
+	manufacturer: 'gigabyte',
+	instock: 29,
+	model: 'z390',
+	partnumber: 'Z390 AORUS ULTRA',
+	weight: 2.93,
+	sku: nil,
+	tag: nil)
+
+Product.create!(
+	title: 'MSI MEG Z390 ACE LGA 1151 (300 Series) Intel Z390 SATA 6Gb/s USB 3.1 ATX Intel Motherboard',
+	description: %{<p><em><ul><li>Intel Z390</li><li>Supports 9th/8th Gen Intel Core / Pentium Gold / Celeron processors for LGA 1151 socket</li><li>Not backward compatible with older generation of LGA 1151 CPUs</li><li>DDR4 4500(OC)/ 4400(OC)/ 4300(OC)/ 4266(OC)/ 4200(OC)/ 4133(OC)/ 4000(OC)/ 3866(OC)/ 3733(OC)/ 3600(OC)/ 3466(OC)/ 3400(OC)/ 3333(OC)/ 3300(OC)/ 3200(OC)/ 3000(OC)/ 2800(OC)/ 2666/ 2400/ 2133</li></ul></em></p>},
+	image_url: 'msi_meg_z390_001.jpg',
+	image_url2: 'msi_meg_z390_002.jpg',
+	image_url3: 'msi_meg_z390_003.jpg',
+	price: 289.99,
+	category_id: 1,
+	manufacturer: 'msi',
+	instock: 49,
+	model: 'meg z390',
+	partnumber: 'nil',
+	weight: 2.13,
 	sku: nil,
 	tag: nil)
 

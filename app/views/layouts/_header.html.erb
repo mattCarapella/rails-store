@@ -1,16 +1,16 @@
  			<%= image_tag("1920x80b.jpg", :size => "1440x80") %>
  			
  			<div class="navbar-top">
- 		
+ 				<div class="logo">
+					<%= link_to image_tag("logo_02.png"), store_index_path %>
+				</div>
 				<fieldset class="search">
 		      <%= form_tag products_path, method: :get, class: "product_search" do %>
 						<div class="search-field">
 							<%= text_field_tag :title, params[:search], placeholder: "Search all products..." %>
-						</div>
-						
+						</div>						
 					  <% end %>
-				</fieldset>
- 			
+				</fieldset> 			
  			</div>
  			
  			<div class="navbar">
@@ -20,14 +20,15 @@
      				<i class="fa fa-caret-down"></i>
     			</button>
 	    		<div class="dropdown-content">
-			      <a href="/categories/1">GPUs</a>
-			      <a href="/categories/2">CPUs</a>
-			      <a href="/categories/3">Memory</a>
-			      <a href="/categories/10">Motherboards</a>
-			      <a href="/categories/12">Storage</a>
-			      <a href="/categories/13">Cases</a>
-			      <a href="/categories/14">Power Supplies</a>
-			      <a href="/categories/15">Fans</a>
+			      <a href="/categories/gpu">GPUs</a>
+			      <a href="/categories/cpu">CPUs</a>
+			      <a href="/categories/memory">Memory</a>
+			      <a href="/categories/motherboard">Motherboards</a>
+			      <a href="/categories/storage">Storage</a>
+			      <a href="/categories/case">Cases</a>
+			      <a href="/categories/power_supply">Power Supplies</a>
+			      <a href="/categories/fan">Fans</a>
+			      <a href="/categories/accessories">Accessories</a>
 	   		 </div>
   			</div> 
 			</div>

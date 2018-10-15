@@ -8,17 +8,30 @@ body {
 
 header.main {
 
-	.navbar-top {
+  a {
+  	text-decoration: none;
+  }
+  a:hover {
+  	background: none;
+  }
+
+ 	.navbar-top {
 		height: 100px;
 		overflow: hidden;
     background: #474747;
     margin-top:-10px;
+    display: flex;
+
+    .logo {
+    	margin-top: 6px;
+    }
 
     .search {
-
     	border: none;
+    	width: 100%;
     	text-align: center;
-    	padding-top: 30px;
+    	padding-top: 35px;
+    	margin-right: 300px;
 
     	input[type=text] {
     		width: 500px;
@@ -26,17 +39,11 @@ header.main {
     		border-radius: 4px;
     		text-align: center;
 			}
-
 			input[type=submit] {
     		width: 500px;
-    		height: 25px;
-    	
+    		height: 25px;  	
 			}
 
-    }
-
-    .logo {
-    	float: left;
     }
 
     .search-field {
@@ -47,13 +54,10 @@ header.main {
 
 	.navbar {
     overflow: hidden;
-    background: #6C6E70; //linear-gradient(to right, #E3AF00, #e9573f);
-    //font-family: Arial, Helvetica, sans-serif;
+    background: #6C6E70;
     font-size: 5em;
     height: 50px;
     text-align: left;
-    
-
 	}
 
 	.navbar a {
