@@ -1,34 +1,35 @@
- 			<%= image_tag("1920x80b.jpg", :size => "1440x80") %>
- 			
- 			<div class="navbar-top">
- 				<div class="logo">
-					<%= link_to image_tag("logo_02.png"), store_index_path %>
-				</div>
-				<fieldset class="search">
-		      <%= form_tag products_path, method: :get, class: "product_search" do %>
-						<div class="search-field">
-							<%= text_field_tag :title, params[:search], placeholder: "Search all products..." %>
-						</div>						
-					  <% end %>
-				</fieldset> 			
- 			</div>
- 			
- 			<div class="navbar">
- 				<a href="/">All Products</a>
- 				<div class="dropdown">
-    			<button class="dropbtn">Categories 
-     				<i class="fa fa-caret-down"></i>
-    			</button>
-	    		<div class="dropdown-content">
-			      <a href="/categories/gpu">GPUs</a>
-			      <a href="/categories/cpu">CPUs</a>
-			      <a href="/categories/memory">Memory</a>
-			      <a href="/categories/motherboard">Motherboards</a>
-			      <a href="/categories/storage">Storage</a>
-			      <a href="/categories/case">Cases</a>
-			      <a href="/categories/power_supply">Power Supplies</a>
-			      <a href="/categories/fan">Fans</a>
-			      <a href="/categories/accessories">Accessories</a>
-	   		 </div>
-  			</div> 
-			</div>
+<div class="ad">
+	<%= image_tag("1920x80b.jpg", :size => "1440x80") %>
+</div>
+<div class="navbar-top">
+	<div class="logo">
+	<%= link_to image_tag("logo_02.png"), store_index_path %>
+</div>
+<fieldset class="search">	
+	<%= search_form_for @search do |f| %>
+		<div class="field">
+			<%= f.text_field :title_cont, :class => "form-control", :placeholder => "Search all products..." %> 
+		</div>	
+	<% end %>
+</fieldset> 		
+</div>
+
+<div class="navbar">
+	<%= link_to "All Products", products_path %>
+	<div class="dropdown">
+	<button class="dropbtn">Categories 
+			<i class="fa fa-caret-down"></i>
+	</button>
+	<div class="dropdown-content">
+    <a href="/categories/gpu">GPUs</a>
+    <a href="/categories/cpu">CPUs</a>
+    <a href="/categories/memory">Memory</a>
+    <a href="/categories/motherboard">Motherboards</a>
+    <a href="/categories/storage">Storage</a>
+    <a href="/categories/case">Cases</a>
+    <a href="/categories/power_supply">Power Supplies</a>
+    <a href="/categories/fan">Fans</a>
+    <a href="/categories/accessories">Accessories</a>
+	 </div>
+</div> 
+</div>

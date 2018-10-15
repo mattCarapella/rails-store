@@ -10,7 +10,9 @@ class CategoriesController < ApplicationController
   end
 
   def show
-  	@products_in_category = @category.products
+   	@search = Product.search(params[:q])
+  	products = @search.result
+  	@products_in_category = @category.products.order(:title)
   end
 
   def index

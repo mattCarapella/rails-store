@@ -2,12 +2,9 @@
   <aside id="notice"><%= notice %></aside>
 <% end %>
 
-<h1>Products</h1>
 <% if current_user and current_user.admin? %>
 	<%= link_to 'New product', new_product_path %><br><br>
 <% end %>
-
-
 
 <ul class="catalog"> 
 	<% cache @products do %>

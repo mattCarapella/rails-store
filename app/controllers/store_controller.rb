@@ -3,7 +3,9 @@ class StoreController < ApplicationController
 	before_action :set_cart
 	
   def index
-  	@products = Product.order(:title)
+  	@search = Product.search(params[:q])
+  	@products = @search.result.order(:title)
+
   	if session[:counter].nil?
       session[:counter] = 0
     end

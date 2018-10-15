@@ -12,9 +12,8 @@ class Product < ApplicationRecord
 	}
 	validates :price, numericality: {greater_than_or_equal_to: 0.01}
 
-  def self.search(search)
+  def self.search2(search)
     products = Product.all
-    #products = products.where("title like ?", "%#{search.capitalize}%") if search
     products = products.where("title ILIKE ?", "%#{search}%") if search
     products
   end
