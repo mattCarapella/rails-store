@@ -499,7 +499,7 @@ Product.create!(
 #fans
 Product.create!(
 	title: 'Enermax ETS-T40F-BK 120mm Twister Aluminum 120mm Black CPU Cooler with blue LED PWM Fan',
-	description: <p><em><ul><li>800 - 1800 RPM</li><li>33.26 - 75.98 CFM</li><li>Aluminum & Copper</li></ul></em></p>,
+	description: %{<p><em><ul><li>800 - 1800 RPM</li><li>33.26 - 75.98 CFM</li><li>Aluminum & Copper</li></ul></em></p>},
 	image_url: 'emermax_etst40f_fan_001.jpg',
 	image_url2: 'emermax_etst40f_fan_002.jpg',
 	image_url3: 'emermax_etst40f_fan_003.jpg',
@@ -515,7 +515,7 @@ Product.create!(
 
 Product.create!(
 	title: 'Lepa Chopper Advance LPCPA12P-BL Cooling Fan - 120 mm - 1500 rpm70.4 CFM - 20 dB(A) Noise - Barometric Oilless Bearing - Blue LED',
-	description: <p><em><ul><li>Patented modular frame with LEPA logo halo ring design to increase 30% airflow.</li><li>Unique quad-ring LED pattern creates 30 different lighting effects.</li><li>Dynamic lighting mode to meet your visual desire.</li><li>PWM speed control for the perfect balance between performance and silence.</li><li>Patented Barometric Oilless (BOL) bearing for long lifespan and silent spinning.</li><li>Removable fan blade for convenient cleaning.</li></ul></em></p>,
+	description: %{<p><em><ul><li>Patented modular frame with LEPA logo halo ring design to increase 30% airflow.</li><li>Unique quad-ring LED pattern creates 30 different lighting effects.</li><li>Dynamic lighting mode to meet your visual desire.</li><li>PWM speed control for the perfect balance between performance and silence.</li><li>Patented Barometric Oilless (BOL) bearing for long lifespan and silent spinning.</li><li>Removable fan blade for convenient cleaning.</li></ul></em></p>},
 	image_url: 'lepa_chopper_001.jpg',
 	image_url2: 'lepa_chopper_002.jpg',
 	image_url3: 'lepa_chopper_003.jpg',
