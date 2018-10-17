@@ -17,6 +17,9 @@
     	background: none;
     	text-decoration: underline;
     }
+
+
+  
   }
 
   .box {
@@ -28,6 +31,14 @@
     justify-content: space-between;
     flex-direction: column;
 
+    .add-to-cart {
+      display: flex;
+      flex-direction:row;
+
+      #cart-icon {
+        padding-right: 10px;
+      }
+    }
 
     .product-image {
       box-shadow: 0.176em 0.176em 0.354em 0px rgba(0,0,0,0.13);
