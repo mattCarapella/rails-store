@@ -1,13 +1,13 @@
 Product.delete_all
-Category.create!(ptype: "gpu")
-Category.create!(ptype: "cpu")
-Category.create!(ptype: "memory")
-Category.create!(ptype: "motherboard")
-Category.create!(ptype: "storage")
-Category.create!(ptype: "case")
-Category.create!(ptype: "power_supply")
-Category.create!(ptype: "fan")
-Category.create!(ptype: "accessories")
+Category.create!(ptype: "gpu")						#1
+Category.create!(ptype: "cpu")						#2
+Category.create!(ptype: "memory")					#3
+Category.create!(ptype: "motherboard")		#4
+Category.create!(ptype: "storage")				#5
+Category.create!(ptype: "case")						#6
+Category.create!(ptype: "power_supply")		#7
+Category.create!(ptype: "fan")						#8
+Category.create!(ptype: "accessories")		#9
 
 # GPUs --------------------------------------------------------------------------------------------------------
 
@@ -149,7 +149,7 @@ When creating your best work, you need the most responsive technology to handle 
   image_url2: nil,
 	image_url3: nil,  
   price: 529.99,
-  category_id: 1,
+  category_id: 2,
   manufacturer: "intel",
 	instock: 29,
 	model: '9900K',
@@ -165,7 +165,7 @@ Product.create!(
   image_url2: nil,
 	image_url3: nil,  
   price: 1899.00,
-  category_id: 1,
+  category_id: 2,
   manufacturer: 'intel',
 	instock: 25,
 	model: '7980XE',
@@ -180,7 +180,7 @@ Product.create!(title: 'Intel Core i7-9700K Coffee Lake 8-Core 3.6 GHz (4.9 GHz 
   image_url2: nil,
 	image_url3: nil,
   price: 449.00,
-  category_id: 1,
+  category_id: 2,
   manufacturer: 'intel',
 	instock: 29,
 	model: '9700k',
@@ -196,7 +196,7 @@ Product.create!(
 	image_url: 'amd_ryzen_001.jpg',
 	image_url2: 'amd_ryzen_002.jpg',
 	image_url3: nil,
-	category_id: 1,
+	category_id: 2,
 	manufacturer: 'amd',
 	instock: 141,
 	model: '2700X',
@@ -211,7 +211,7 @@ Product.create!(title: 'Intel Core i7-8700K Coffee Lake 6-Core 3.7 GHz (4.7 GHz 
   image_url2: nil,
 	image_url3: nil,
   price: 389.00,
-  category_id: 1,
+  category_id: 2,
   manufacturer: 'intel',
 	instock: 19,
 	model: '8700k',
@@ -226,7 +226,7 @@ Product.create!(title: 'Intel Core i5-8600K Coffee Lake 6-Core 3.6 GHz (4.3 GHz 
   image_url2: nil,
 	image_url3: nil,
   price: 279.00,
-  category_id: 1,
+  category_id: 2,
   manufacturer: 'intel',
 	instock: 49,
 	model: '8600k',
@@ -242,7 +242,7 @@ Product.create!(
 	image_url2: 'amd_ryzen_threadripper_002.jpg',
 	image_url3: 'amd_ryzen_threadripper_003.jpg',
 	price: 1749.99,
-	category_id: 1,
+	category_id: 2,
 	manufacturer: 'amd',
 	instock: 19,
 	model: '2990WX',
@@ -265,7 +265,7 @@ Product.create!(
   image_url2: nil,
 	image_url3: nil,
   price: 169.00,
-  category_id: 1,
+  category_id: 3,
   manufacturer: "gskill",
 	instock: 189,
 	model: "TridentZ",
@@ -285,7 +285,7 @@ Product.create!(
   image_url2: nil,
 	image_url3: nil,
   price: 189.00,
-  category_id: 1,
+  category_id: 3,
   manufacturer: 'corsair',
 	instock: 189,
 	model: 'dominator platinum 16gb',
@@ -304,7 +304,7 @@ Product.create!(
 	image_url2: nil,
 	image_url3: nil,
 	price: 79.99,
-	category_id: 1,
+	category_id: 3,
 	manufacturer: 'ballistix',
 	instock: 69,
 	model: 'Sport LT',
@@ -313,6 +313,54 @@ Product.create!(
 	sku: nil,
 	tag: nil
 )
+
+Product.create!(
+	title: 'Corsair Vengeance LPX 32GB (2 x 16GB) 288-Pin DDR4 SDRAM DDR4 3200 (PC4 25600) Desktop Memory Model CMK32GX4M2L3200C16',
+	description: %{<em><p>From the PCB to the ICs to the heat spreader, CORSAIR does not skimp on any detail on the Vengeance LPX memory. The result is that Vengeance LPX memory delivers top-level performance in a reliable manner. Complete with XMP 2.0, you can overclock safely with only a setting. A low-profile form factor makes it fit in space constraint cases and even allows for installation of larger CPU cooler. Available in four colors, it is a perfect choice for either novice or seasoned gamers.</p><p><strong>COMPATIBILITY TESTED</strong><br>Part of CORSAIR's exhaustive testing process includes performance and compatibility testing on nearly every motherboard on the market-and a few that aren't.</p><p><strong>XMP 2.0 SUPPORT</strong><br>One setting is all it takes to automatically adjust to the fastest safe speed for your VENGEANCE LPX kit. You’ll get amazing, reliable performance without lockups or other strange behavior.</p><p><strong>ALUMINUM HEAT SPREADER</strong><br>Overclocking overhead is limited by operating temperature. The unique design of the VENGEANCE LPX heat spreader optimally pulls heat away from the ICs and into your system’s cooling path, so you can push it harder.</p></em>},
+	image_url: 'corsair_vengeance_lpx_001.jpg',
+	image_url2: 'corsair_vengeance_lpx_002.jpg',
+	image_url3: 'corsair_vengeance_lpx_003.jpg',
+	price: 289.99,
+	category_id: 3,
+	manufacturer: 'corsair',
+	instock: 61,
+	model: 'LPX 32GB',
+	partnumber: 'CMK32GX4M2L3200C16',
+	weight: 0.51,
+	sku: nil,
+	tag: nil)
+
+Product.create!(
+	title: 'Team T-Force Night Hawk RGB 16GB (2 x 8GB) 288-Pin DDR4 SDRAM DDR4 3200 (PC4 25600) Memory (Desktop Memory) Model TF2D416G3200HC16CDC01',
+	description: %{<em><p>Team Group created the Night Hawk RGB luminous memory module with heat spreaders in black and white colors. Whether it is the mysterious black night hawk or the pure white night hawk, no matter in the dark or under the light, they are both kings at pursuing top speed.</p><p><strong>Night Hawk RGB synchronized variable lighting effect ASUS Aura Sync supported</strong><br>NIGHT HAWK RGB has full color synchronized variable lighting effects, sending dazzling bright lights through the unique hawkeyes light lead panel design. User can feel the Force Flow lighting effect after setting up memory module and turn on computer lighting effects,also synchronize the lighting effect to the system through the function of ASUS Aura Sync, or match and design according to personal preference.</p></em>},
+	image_url: 'tforce_nighthawk_001.jpg',
+	image_url2: 'tforce_nighthawk_002.jpg',
+	image_url3: 'tforce_nighthawk_003.jpg',
+	price: 169.99,
+	category_id: 3,
+	manufacturer: 'team_t-force',
+	instock: 58,
+	model: 'night_hawk_rgb',
+	partnumber: 'TF2D416G3200HC16CDC01',
+	weight: 0.24,
+	sku: nil,
+	tag: nil)
+
+Product.create!(
+	title: 'Patriot 16GB (2 x 8GB) 288-Pin DDR4 SDRAM DDR4 3200 (PC4 25600) Desktop Memory Model PVR416G320C6K',
+	description: %{<em><p><h3>Speed in RGB Excitement</h3><br>Play full throttle on the latest Intel or AMD platform. Program color and lighting effect on the five lighting zones, and even sync your memory lights with other compatible components for unrivalled visual thrills.</p><p><h3>Aggressive Heatshield</h3><br>Inspired by Patriot’s signature Viper head logo, the heatshield showcases clean angular symmetry with captivating linear aesthetics. Available in classic White or Black, it will never look out of place on any motherboard. It is also excellent in thermal conductivity.</p><p><h3>Vibrant RGB Lighting</h3><br>Options are limitless. Build your dream lighting rig by customizing the 5 different lighting zones with 16.8 million colors, and 8 lighting effects (including breathing, viper, heartbeat, marquee, rain drop, aurora, and neon).</p></em>},
+	image_url: 'patriot_rgb_001.jpg',
+	image_url2: 'patriot_rgb_002.jpg',
+	image_url3: 'patriot_rgb_003.jpg',
+	price: 169.99,
+	category_id: 3,
+	manufacturer: 'patriot',
+	instock: 98,
+	model: nil,
+	partnumber: 'PVR416G320C6K',
+	weight: 0.21,
+	sku: nil,
+	tag: nil)
 
 #motherboards --------------------------------------------------------------------------------------------------------
 
@@ -330,7 +378,7 @@ Product.create!(
 	image_url2: 'asus_rog_z390_002.jpg',
 	image_url3: 'asus_rog_z390_003.jpg',
 	price: 289.99,
-	category_id: 1,
+	category_id: 4,
 	manufacturer: 'asus',
 	instock: 24,
 	model: 'Z390',
@@ -351,7 +399,7 @@ Product.create!(
 	image_url2: nil,
 	image_url3: nil,
 	price: 159.99,
-	category_id: 1,
+	category_id: 4,
 	manufacturer: 'asrock',
 	instock: 11,
 	model: 'Z370',
@@ -374,7 +422,7 @@ Product.create!(
 	image_url2: nil,
 	image_url3: nil,
 	price: 259.99,
-	category_id: 1,
+	category_id: 4,
 	manufacturer: 'supermicro',
 	instock: 15,
 	model: '1151',
@@ -390,7 +438,7 @@ Product.create!(
 	image_url2: 'gigabyte_z390_002.jpg',
 	image_url3: 'gigabyte_z390_003.jpg',
 	price: 249.99,
-	category_id: 1,
+	category_id: 4,
 	manufacturer: 'gigabyte',
 	instock: 29,
 	model: 'z390',
@@ -406,7 +454,7 @@ Product.create!(
 	image_url2: 'msi_meg_z390_002.jpg',
 	image_url3: 'msi_meg_z390_003.jpg',
 	price: 289.99,
-	category_id: 1,
+	category_id: 4,
 	manufacturer: 'msi',
 	instock: 49,
 	model: 'meg z390',
@@ -416,6 +464,23 @@ Product.create!(
 	tag: nil)
 
 #storage --------------------------------------------------------------------------------------------------------
+
+
+Product.create!(
+	title: 'Buffalo TeraStation Pro Quad 4-Bay 4 TB (4 x 1 TB) RAID Network Attached Storage (NAS) - TS-QVH4.0TL/R6',
+	description: %{<p><em>Buffalo s TeraStation Pro Quad is a high performance network storage solution ideal for businesses and demanding users looking to implement a RAID based network storage solution for larger networks and business critical applications. With a powerful Intel Atom Dual-Core Processor, TeraStation Pro Quad provides exceptional performance during file transfers and everyday NAS functions. TeraStation Pro Quad runs many services simultaneously and the Dual-Core processor enables the ability to focus on concurrent tasks with minimal performance degradation: experience maximum network throughput while a replication job runs in the background or perform fast search indexing while an anti-virus scan is occurring. TeraStation Pro Quad is packed with business class features such as Active Directory support, disk quota support, share level Replication, failover support, dual gigabit Ethernet ports, hot-swap hard drives and USB 3.0 accessory support.</em></p>},
+	image_url: 'buffalo_terastation_001.jpg',
+	image_url2: nil,
+	image_url3: nil,
+	price: 1599.99,
+	category_id: 5,
+	manufacturer: 'buffalo',
+	instock: 11,
+	model: 'terrastation pro quad',
+	partnumber: '100177271781',
+	weight: 44.92,
+	sku: 'ADIB004QO8XVY',
+	tag: nil)
 
 Product.create!(
 	title: 'Crucial MX500 2.5" 1TB SATA III 3D NAND Internal Solid State Drive (SSD) CT1000MX500SSD1',
@@ -427,7 +492,7 @@ Product.create!(
 	image_url2: nil,
 	image_url3: nil,
 	price: 119.99,
-	category_id: 1,
+	category_id: 5,
 	manufacturer: 'crucial',
 	instock: 125,
 	model: 'MX500',
@@ -445,7 +510,7 @@ Product.create!(
 	image_url2: nil,
 	image_url3: nil,
 	price: 89.99,
-	category_id: 1,
+	category_id: 5,
 	manufacturer: 'intel',
 	instock: 63,
 	model: '545s',
@@ -465,7 +530,7 @@ Product.create!(
 	image_url2: nil,
 	image_url3: nil,
 	price: 84.99,
-	category_id: 1,
+	category_id: 5,
 	manufacturer: 'samsung',
 	instock: 99,
 	model: '860 EVO',
@@ -483,7 +548,7 @@ Product.create!(
 	image_url2: nil,
 	image_url3: nil,
 	price: 84.99,
-	category_id: 1,
+	category_id: 5,
 	manufacturer: 'sandisk',
 	instock: 42,
 	model: 'ultra 3d',
@@ -504,7 +569,7 @@ Product.create!(
 	image_url2: 'emermax_etst40f_fan_002.jpg',
 	image_url3: 'emermax_etst40f_fan_003.jpg',
 	price: 34.99,
-	category_id: 1,
+	category_id: 8,
 	manufacturer: 'enermax',
 	instock: 121,
 	model: 'ETS-T40F-BK',
@@ -520,7 +585,7 @@ Product.create!(
 	image_url2: 'lepa_chopper_002.jpg',
 	image_url3: 'lepa_chopper_003.jpg',
 	price: 19.99,
-	category_id: 1,
+	category_id: 8,
 	manufacturer: 'lepa',
 	instock: 91,
 	model: 'LPCPA12P-BL',
@@ -536,7 +601,7 @@ Product.create!(
 	image_url2: 'corsair_CL-9011109-WW_002.jpg',
 	image_url3: 'corsair_CL-9011109-WW_003.jpg',
 	price: 51.99,
-	category_id: 1,
+	category_id: 9,
 	manufacturer: 'corsair',
 	instock: 62,
 	model: 'lightning_node_pro',
@@ -545,21 +610,6 @@ Product.create!(
 	sku: nil,
 	tag: nil)
 
-Product.create!(
-	title: 'Buffalo TeraStation Pro Quad 4-Bay 4 TB (4 x 1 TB) RAID Network Attached Storage (NAS) - TS-QVH4.0TL/R6',
-	description: %{<p><em>Buffalo s TeraStation Pro Quad is a high performance network storage solution ideal for businesses and demanding users looking to implement a RAID based network storage solution for larger networks and business critical applications. With a powerful Intel Atom Dual-Core Processor, TeraStation Pro Quad provides exceptional performance during file transfers and everyday NAS functions. TeraStation Pro Quad runs many services simultaneously and the Dual-Core processor enables the ability to focus on concurrent tasks with minimal performance degradation: experience maximum network throughput while a replication job runs in the background or perform fast search indexing while an anti-virus scan is occurring. TeraStation Pro Quad is packed with business class features such as Active Directory support, disk quota support, share level Replication, failover support, dual gigabit Ethernet ports, hot-swap hard drives and USB 3.0 accessory support.</em></p>},
-	image_url: 'buffalo_terastation_001.jpg',
-	image_url2: nil,
-	image_url3: nil,
-	price: 1599.99,
-	category_id: 1,
-	manufacturer: 'buffalo',
-	instock: 11,
-	model: 'terrastation pro quad',
-	partnumber: '100177271781',
-	weight: 44.92,
-	sku: 'ADIB004QO8XVY',
-	tag: nil)
 
 Product.create!(
 	title: 'ASUS ROG Addressable RGB 5050 LED 60cm Lighting Strip with Magnetic Backing and Adhesive Strips for use with AURA Sync RGB',
@@ -568,7 +618,7 @@ Product.create!(
 	image_url2: 'asus_5050_002.jpg',
 	image_url3: 'asus_5050_003.jpg',
 	price: 27.99,
-	category_id: 1,
+	category_id: 9,
 	manufacturer: 'asus',
 	instock: 98,
 	model: '5050',
@@ -584,7 +634,7 @@ Product.create!(
 	image_url2: 'ekwb_x360_002.jpg',
 	image_url3: 'ekwb_x360_003.jpg',
 	price: 449.99,
-	category_id: 1,
+	category_id: 8,
 	manufacturer: 'ekwb',
 	instock: 98,
 	model: 'X360',
@@ -593,50 +643,4 @@ Product.create!(
 	sku: nil,
 	tag: nil)
 
-Product.create!(
-	title: 'Corsair Vengeance LPX 32GB (2 x 16GB) 288-Pin DDR4 SDRAM DDR4 3200 (PC4 25600) Desktop Memory Model CMK32GX4M2L3200C16',
-	description: %{<em><p>From the PCB to the ICs to the heat spreader, CORSAIR does not skimp on any detail on the Vengeance LPX memory. The result is that Vengeance LPX memory delivers top-level performance in a reliable manner. Complete with XMP 2.0, you can overclock safely with only a setting. A low-profile form factor makes it fit in space constraint cases and even allows for installation of larger CPU cooler. Available in four colors, it is a perfect choice for either novice or seasoned gamers.</p><p><strong>COMPATIBILITY TESTED</strong><br>Part of CORSAIR's exhaustive testing process includes performance and compatibility testing on nearly every motherboard on the market-and a few that aren't.</p><p><strong>XMP 2.0 SUPPORT</strong><br>One setting is all it takes to automatically adjust to the fastest safe speed for your VENGEANCE LPX kit. You’ll get amazing, reliable performance without lockups or other strange behavior.</p><p><strong>ALUMINUM HEAT SPREADER</strong><br>Overclocking overhead is limited by operating temperature. The unique design of the VENGEANCE LPX heat spreader optimally pulls heat away from the ICs and into your system’s cooling path, so you can push it harder.</p></em>},
-	image_url: 'corsair_vengeance_lpx_001.jpg',
-	image_url2: 'corsair_vengeance_lpx_002.jpg',
-	image_url3: 'corsair_vengeance_lpx_003.jpg',
-	price: 289.99,
-	category_id: 1,
-	manufacturer: 'corsair',
-	instock: 61,
-	model: 'LPX 32GB',
-	partnumber: 'CMK32GX4M2L3200C16',
-	weight: 0.51,
-	sku: nil,
-	tag: nil)
 
-Product.create!(
-	title: 'Team T-Force Night Hawk RGB 16GB (2 x 8GB) 288-Pin DDR4 SDRAM DDR4 3200 (PC4 25600) Memory (Desktop Memory) Model TF2D416G3200HC16CDC01',
-	description: %{<em><p>Team Group created the Night Hawk RGB luminous memory module with heat spreaders in black and white colors. Whether it is the mysterious black night hawk or the pure white night hawk, no matter in the dark or under the light, they are both kings at pursuing top speed.</p><p><strong>Night Hawk RGB synchronized variable lighting effect ASUS Aura Sync supported</strong><br>NIGHT HAWK RGB has full color synchronized variable lighting effects, sending dazzling bright lights through the unique hawkeyes light lead panel design. User can feel the Force Flow lighting effect after setting up memory module and turn on computer lighting effects,also synchronize the lighting effect to the system through the function of ASUS Aura Sync, or match and design according to personal preference.</p></em>},
-	image_url: 'tforce_nighthawk_001.jpg',
-	image_url2: 'tforce_nighthawk_002.jpg',
-	image_url3: 'tforce_nighthawk_003.jpg',
-	price: 169.99,
-	category_id: 1,
-	manufacturer: 'team_t-force',
-	instock: 58,
-	model: 'night_hawk_rgb',
-	partnumber: 'TF2D416G3200HC16CDC01',
-	weight: 0.24,
-	sku: nil,
-	tag: nil)
-
-Product.create!(
-	title: 'Patriot 16GB (2 x 8GB) 288-Pin DDR4 SDRAM DDR4 3200 (PC4 25600) Desktop Memory Model PVR416G320C6K',
-	description: %{<em><p><h3>Speed in RGB Excitement</h3><br>Play full throttle on the latest Intel or AMD platform. Program color and lighting effect on the five lighting zones, and even sync your memory lights with other compatible components for unrivalled visual thrills.</p><p><h3>Aggressive Heatshield</h3><br>Inspired by Patriot’s signature Viper head logo, the heatshield showcases clean angular symmetry with captivating linear aesthetics. Available in classic White or Black, it will never look out of place on any motherboard. It is also excellent in thermal conductivity.</p><p><h3>Vibrant RGB Lighting</h3><br>Options are limitless. Build your dream lighting rig by customizing the 5 different lighting zones with 16.8 million colors, and 8 lighting effects (including breathing, viper, heartbeat, marquee, rain drop, aurora, and neon).</p></em>},
-	image_url: 'patriot_rgb_001.jpg',
-	image_url2: 'patriot_rgb_002.jpg',
-	image_url3: 'patriot_rgb_003.jpg',
-	price: 169.99,
-	category_id: 1,
-	manufacturer: 'patriot',
-	instock: 98,
-	model: nil,
-	partnumber: 'PVR416G320C6K',
-	weight: 0.21,
-	sku: nil,
-	tag: nil)
