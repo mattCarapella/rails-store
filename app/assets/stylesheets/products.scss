@@ -14,14 +14,23 @@
 
 
 	.display-product {
-		display: flex
+		display: flex;
+
+    .product-picture {
+      padding: 40px 0px 0px 40px;
+    }
+
+    .product-text {
+      padding: 30px 50px 0px 50px;
+
+      .product-title {
+        background: red;
+      }
+    }
+
 
 	}
 
-	.display-picture {
-
-
-	}
 
 
 

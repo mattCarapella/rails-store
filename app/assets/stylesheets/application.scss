@@ -7,7 +7,7 @@ body {
 }
 
 .content {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Lato', sans-serif;
 	margin: 0;
 	padding: 0;
 	display: flex;
@@ -22,9 +22,10 @@ body {
 	}
 
 	nav {
-		min-height: 700px;
+		min-height: 2000px;
 		padding-bottom: 1em;
 		background: #6C6E70;
+		height: 100vh;
 		text-align: center; // mobile has centered nav
 		@media (min-width: 30em) {
 			text-align: left; // desktop nav is left-aligned
@@ -43,7 +44,7 @@ body {
 
 			li {
 				color: white;
-				font-family: 'Roboto', sans-serif;
+				font-family: 'Lato', sans-serif;
 				font-weight: bold;
 				font-size: 1.3em;
 				margin: 0;

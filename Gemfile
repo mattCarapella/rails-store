@@ -8,17 +8,12 @@ gem 'pg', '>= 0.18', '< 2.0'      # Use postgresql as the database for Active Re
 gem 'puma', '~> 3.11'             # Use Puma as the app server
 gem 'sass-rails', '~> 5.0'        # Use SCSS for stylesheets
 gem 'uglifier', '>= 1.3.0'        # Use Uglifier as compressor for JavaScript assets
-# gem 'mini_racer', platforms: :ruby
 gem 'coffee-rails', '~> 4.2'      # Use CoffeeScript for .coffee assets and views
 gem 'turbolinks', '~> 5'          # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'jquery-turbolinks', '~> 2.1'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
 gem 'jbuilder', '~> 2.5'          # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'webpacker', '~> 3.5', '>= 3.5.5'
-# gem 'redis', '~> 4.0'           # Use Redis adapter to run Action Cable in production
-# gem 'bcrypt', '~> 3.1.7'        # Use ActiveModel has_secure_password
-# gem 'mini_magick', '~> 4.8'     # Use ActiveStorage variant
-# gem 'capistrano-rails', group: :development     # Use Capistrano for deployment
 gem 'bootsnap', '>= 1.1.0', require: false        # Reduces boot times through caching; required in config/boot.rb
 gem 'figaro', '~> 1.1', '>= 1.1.1'
 gem 'activemodel-serializers-xml', git: 'https://github.com/rails/activemodel-serializers-xml'
