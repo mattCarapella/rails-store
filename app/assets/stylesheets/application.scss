@@ -22,9 +22,9 @@ body {
 	}
 
 	nav {
-		min-height: 2000px;
+		//min-height: 2000px;
 		padding-bottom: 1em;
-		background: #6C6E70;
+		background: #6C6E70;		// left sidebar
 		height: 100vh;
 		text-align: center; // mobile has centered nav
 		@media (min-width: 30em) {
@@ -83,10 +83,6 @@ body {
 		}
 	}
 }
-
-
-
-
 
 
 .depot_form {

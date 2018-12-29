@@ -4,17 +4,17 @@
 	<%= search_form_for @search do |f| %>
 		<div class="field">
 			<%= f.label :title_start, "Brand" %>
-			<%= f.text_field :title_start %> 
+			<%= f.text_field :title_start, autocomplete: 'off' %> 
 		</div>	
 
 		<div class="field">
 			<%= f.label :price_gteq, "Minimum Price" %> 
-			<%= f.text_field :price_gteq %>
+			<%= f.text_field :price_gteq, autocomplete: 'off' %>
 		</div>
 
 		<div class="field">
 			<%= f.label :price_lteq, "Maximum Price" %> 
-			<%= f.text_field :price_lteq %>
+			<%= f.text_field :price_lteq, autocomplete: 'off' %>
 		</div>
 
 		<div class="actions"><%= f.submit "Search" %></div>

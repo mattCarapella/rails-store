@@ -2,14 +2,15 @@ class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
   include CurrentCart 
   before_action :set_cart
-  before_action :get_q
+  #before_action :get_q
   
   # GET /products
   # GET /products.json
   def index	
-		@search = Product.search(params[:q])
-  	@products = @search.result
-    @products = @products.paginate(:page => params[:page], :per_page => 25)
+		#@search = Product.search(params[:q])
+  	#@products = @search.result
+    #@products = @products.paginate(:page => params[:page], :per_page => 25)
+  	@products = Product.search "*", aggs: {title: {}, price: {}, manufacturer: {}, model: {}, partnumber: {}, sku: {}}
   end
 
   # GET /products/1

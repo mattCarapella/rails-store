@@ -21,6 +21,7 @@ gem 'devise', '~> 4.5'
 gem 'friendly_id', '~> 5.2', '>= 5.2.4'
 gem 'ransack', '~> 2.0', '>= 2.0.1'
 gem 'will_paginate', '~> 3.1', '>= 3.1.6'
+gem 'searchkick'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]     # Call 'byebug' anywhere in the code to stop execution and get a debugger console
