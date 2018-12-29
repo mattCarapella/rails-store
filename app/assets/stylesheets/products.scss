@@ -15,6 +15,7 @@
 
 	.display-product {
 		display: flex;
+		font-family: 'Roboto Condensed', sans-serif;
 
     .product-picture {
       padding: 40px 0px 0px 40px;
@@ -26,6 +27,12 @@
       .product-title {
         background: red;
       }
+
+      .desc {
+				//font-size: 2.8em;
+				//color: red;
+				//font-family: 'Roboto Condensed', sans-serif;
+			}
     }
 	}
 }
@@ -51,6 +58,8 @@ tr.image {
 		}
 	}
 }
+
+
 
 td.description {
 	width: 60%;
@@ -123,6 +132,8 @@ tfoot {
     .product-title {
     	font-size: 0.8em;
     }
+
+
 
     .product-price {
     }

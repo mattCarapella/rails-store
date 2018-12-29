@@ -8,6 +8,7 @@ Category.create!(ptype: "case")						#6
 Category.create!(ptype: "power_supply")		#7
 Category.create!(ptype: "fan")						#8
 Category.create!(ptype: "accessories")		#9
+Category.create!(ptype: "televisions")		#10
 
 # GPUs --------------------------------------------------------------------------------------------------------
 
@@ -642,5 +643,10 @@ Product.create!(
 	weight: 4.56,
 	sku: nil,
 	tag: nil)
+
+Product.create!(title: 'TCL 55" 4K HDR 120Hz CMI Roku Smart LED TV',  description: %{<p><em><ul><li>55" screen size</li><li>High Dynamic Range for exceptional clarity and detail</li><li>Ethernet port for wireless streaming</li><li>Super picture quality</li><li>120HZ CMI refresh rate</li></ul></em></p>}, image_url: 'tcl_55_01.jpg', image_url2: 'tcl_55_02.jpg', price: 349.99, manufacturer: 'tcl', instock: 203, model: '55S405', weight: 30, color: 'black', resolution: '4k', display: 'oled', size: 55, category_id: 10) 
+Product.create!(title: 'LG 60" UK6090PUA 4K Ultra HDR Smart LED TV',  description: %{<p><em><ul><li>Active HDR</li><li>IPS Technology</li><li>Channel Plus</li><li>True Color Accuracy</li><li>Ultra Surround Sound</li><li>webOS 3.5 Smart TV</li></ul></em></p>}, image_url: 'lg_55_01.jpg', image_url2: 'lg_55_02.jpg', price: 549.99, manufacturer: 'lg', instock: 192, model: 'UK6090PUA', weight: 41, color: 'black', resolution: '4k', display: 'led', size: 60, category_id: 10) 
+Product.create!(title: 'TCL 49" 49S405 4K UHD HDR Roku Smart TV',  description: %{<p><em><ul><li>Picture perfect 4K UHD TV viewing with Roku</li><li>Streaming your favorite movies & TV shows has never been easier</li><li>App compatibility: Netflix, Hulu, Amazon Video, HBO Go, HBO Now, Pandora, YouTube</li><li>Features 3 HDMI inputs</li><li>Refresh rate of 120Hz</li></ul></em></p>}, image_url: 'tcl_49_01.jpg', image_url2: 'tcl_49_02.jpg', price: 299.99, manufacturer: 'tcl', instock: 107, model: '49S405', weight: 27, color: 'black', resolution: '4k', display: 'led', size: 49, category_id: 10) 
+Product.create!(title: 'LG 49" 49UK6300 4K Ultra HDR Smart LED TV',  description: %{<p><em><ul><li>The ultimate Smart TV for your home</li><li>Watch your favorite shows and movies on Ultra HD</li><li>Quad-core processor that reduces distracting video noise, enhance sharpness and assure accurate colors</li><li>Four times resolution of Full HD</li><li>HDR10, HDMI and HLG formats supported</li></ul></em></p>}, image_url: 'lg_49_01.jpg', image_url2: 'lg_49_02.jpg', price: 399.99, manufacturer: 'lg', instock: 192, model: '49UK6300', weight: 29, color: 'black', resolution: '4k', display: 'led', size: 49, category_id: 10) 
 
 

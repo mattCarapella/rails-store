@@ -1,23 +1,100 @@
 <div class="mySideNav">
 	
-	<h3>Search By...</h3>
-	<%= search_form_for @search do |f| %>
-		<div class="field">
-			<%= f.label :title_start, "Brand" %>
-			<%= f.text_field :title_start, autocomplete: 'off' %> 
-		</div>	
-
-		<div class="field">
-			<%= f.label :price_gteq, "Minimum Price" %> 
-			<%= f.text_field :price_gteq, autocomplete: 'off' %>
+	<h5>Search By...</h5>
+	
+	<hr />
+	<h5>Price</h5>
+	<% @products.aggs["price"]["buckets"].sort_by{ |b| b.fetch("from", 0) }.each do |bucket| %>
+		<div>
+			<% if params[:price_from] == bucket["from"].to_s && params[:price_to] == bucket["to"].to_s  %> 
+				<strong><%= link_to price_range_name(bucket), request.params.except(:price) %></strong>
+			<% else %>
+				<p><%= link_to price_range_name(bucket), request.params.merge(price_from: bucket["from"], price_to: bucket["to"]) %>
+			<% end %>	
+				(<%= bucket["doc_count"] %>)</p>
 		</div>
-
-		<div class="field">
-			<%= f.label :price_lteq, "Maximum Price" %> 
-			<%= f.text_field :price_lteq, autocomplete: 'off' %>
+	<% end %>	
+	<%= form_with method: :get, local: true, html: { class: "form-inline" } do |form| %> 
+		<div class="form-group mb-2">
+			<%= form.number_field :price_from, value: params[:price_min], placeholder: "$Min", class: "form-control" %>
 		</div>
-
-		<div class="actions"><%= f.submit "Search" %></div>
+		<div class="form-group mb-2">
+			<%= form.number_field :price_to, value: params[:price_max], placeholder: "$Max", class: "form-control" %>
+		</div>
+		<div class="form-group"> 
+			<%= form.button "Go", class: "btn btn-secondary" %>
+		</div>
 	<% end %>
+
+	<hr />
+	<h5>Manufacturer</h5>
+	<% @products.aggs["manufacturer"]["buckets"].sort_by{ |b| b["key"] }.each do |bucket| %>
+		<div>
+			<% if params[:manufacturer] == bucket["key"].to_s %> 
+				<strong><%= link_to bucket["key"].capitalize, request.params.except(:manufacturer) %></strong>
+			<% else %>
+				<p><%= link_to bucket["key"].capitalize, request.params.merge(manufacturer: bucket["key"]) %>
+			<% end %>	
+				(<%= bucket["doc_count"] %>)</p>
+		</div>
+	<% end %>	
+
+	<hr/>
+	<h5>Year</h5>
+	<% @products.aggs["year"]["buckets"].sort_by{ |b| b["key"] }.reverse.each do |bucket| %>
+		<div>
+			<% if params[:year] == bucket["key"].to_s %> 
+				<strong><%= link_to bucket["key"], request.params.except(:year) %></strong>
+			<% else %>
+				<p><%= link_to bucket["key"], request.params.merge(year: bucket["key"]) %>
+			<% end %>	
+				(<%= bucket["doc_count"] %>)</p>
+		</div>
+	<% end %>		
+
+	<hr />
+	<h5>Size</h5>
+	<% @products.aggs["size"]["buckets"].sort_by{ |b| b["key"] }.reverse.each do |bucket| %>
+		<div>
+			<% if params[:size] == bucket["key"].to_s %> 
+				<strong><%= link_to bucket["key"], request.params.except(:size) %></strong>
+			<% else %>
+				<p><%= link_to bucket["key"], request.params.merge(size: bucket["key"]) %>
+			<% end %>	
+				(<%= bucket["doc_count"] %>)</p>
+		</div>
+	<% end %>	
+
+	<hr />
+	<h5>Resolution</h5>
+	<% @products.aggs["resolution"]["buckets"].sort_by{ |b| b["key"] }.each do |bucket| %>
+		<div>
+			<% if params[:resolution] == bucket["key"].to_s %> 
+				<strong><%= link_to bucket["key"], request.params.except(:resolution) %></strong>
+			<% else %>
+				<p><%= link_to bucket["key"], request.params.merge(resolution: bucket["key"]) %>
+			<% end %>	
+				(<%= bucket["doc_count"] %>)</p>
+		</div>
+	<% end %>	
+
+	<hr />
+	<h5>Color</h5>
+	<% @products.aggs["color"]["buckets"].sort_by{ |b| b["key"] }.each do |bucket| %>
+		<div>
+			<% if params[:color] == bucket["key"].to_s %> 
+				<strong><%= link_to bucket["key"].capitalize, request.params.except(:color) %></strong>
+			<% else %>
+				<p><%= link_to bucket["key"].capitalize, request.params.merge(color: bucket["key"]) %>
+			<% end %>	
+				(<%= bucket["doc_count"] %>)</p>
+		</div>
+	<% end %>	
+
+
+
+	<hr/>
+	<h3></h3>
+
 
 </div>
